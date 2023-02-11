@@ -6,8 +6,8 @@ from api.chatgpt import ChatGPT
 
 import os
 
-line_bot_api = LineBotApi(os.getenv(CgT33YlIXcmaQQFx3B6zSNY5UyfnXMaZGDBx6aZjpefuH7uk9AnCAUXOJccA7QEbW336cll9C3a/prEBT5zWAAfEp1YCdib9Zc5Ena0xR7qF+kv/xo2ZulWr+M4kAo6mgJHA2x/JqL2Eyf9Iktv+5QdB04t89/1O/w1cDnyilFU=))
-line_handler = WebhookHandler(os.getenv(d727f3b30dd37089923001c3f4a1e965))
+line_bot_api = LineBotApi(os.getenv("CgT33YlIXcmaQQFx3B6zSNY5UyfnXMaZGDBx6aZjpefuH7uk9AnCAUXOJccA7QEbW336cll9C3a/prEBT5zWAAfEp1YCdib9Zc5Ena0xR7qF+kv/xo2ZulWr+M4kAo6mgJHA2x/JqL2Eyf9Iktv+5QdB04t89/1O/w1cDnyilFU="))
+line_handler = WebhookHandler(os.getenv("d727f3b30dd37089923001c3f4a1e965"))
 working_status = os.getenv("DEFALUT_TALKING", default = "true").lower() == "true"
 
 app = Flask(__name__)
